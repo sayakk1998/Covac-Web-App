@@ -1,0 +1,301 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Covac</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Covac template project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+<link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css' %}">
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="header_content d-flex flex-row align-items-center justify-content-start">
+						<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
+							<div class="logo"><a href="index.html">Covac</a></div>
+							<nav class="main_nav">
+								<ul class="d-flex flex-row align-items-start justify-content-start">
+									<li class="active"><a href="index.html">Home</a></li>
+
+									{% if user.is_authenticated %}
+
+										<li style="color: white; font_size: 30px;"><a href="accounts/profile">My Profile</a></li>
+										<li ><a href="accounts/logout">logout</a></li>
+										<li><a href="slotbook/confirm">Booking Details</a></li>
+										<li><a href="slotbook/slotbook">Book My Slot</a></li>
+									{% else %}
+									<li><a href="accounts/login">Login</a></li>
+									<li><a href="accounts/register">Register</a></li>
+									{% endif %}
+									<li><a href="accounts/faq">FAQ</a></li>
+
+								</ul>
+							</nav>
+
+							<!-- Hamburger -->
+
+							<div class="hamburger ml-auto">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header_social d-flex flex-row align-items-center justify-content-start">
+			<ul class="d-flex flex-row align-items-start justify-content-start">
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu">
+		<div class="menu_header d-flex flex-row align-items-center justify-content-start">
+			<div class="menu_logo"><a href="index.html">Covac</a></div>
+			<div class="menu_close_container ml-auto"><div class="menu_close"><div></div><div></div></div></div>
+		</div>
+		<div class="menu_content">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				{% if user.is_authenticated %}
+
+						<li style="color: white; font_size: 30px;"><a href="accounts/profile">My Profile</a></li>
+						<li><a href="accounts/logout">logout</a></li>
+						<li><a href="accounts/slotbook">Book My Slot</a></li>
+						<li><a href="slotbook/confirm">Booking Details</a></li>
+				{% else %}
+				<li><a href="accounts/login">Login</a></li>
+				<li><a href="accounts/register">Register</a></li>
+				{% endif %}
+				<li><a href="accounts/faq">FAQ</a></li>
+			</ul>
+		</div>
+		<div class="menu_social">
+			<ul class="d-flex flex-row align-items-start justify-content-start">
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Home -->
+
+	<div class="home">
+
+		<!-- Home Slider -->
+		<div class="home_slider_container">
+			<div class="owl-carousel owl-theme home_slider">
+
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="background_image" style="background-image:url(https://www.opengovpartnership.org/wp-content/uploads/2021/04/Vaccines-Webinar-Website-Banner.png)"></div>
+					<div class="home_slider_content_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="home_slider_content">
+										<div class="home_title"><h2>Let's get vaccinated</h2>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="background_image" style="background-image:url(https://wallpaperaccess.com/full/2348995.jpg)"></div>
+					<div class="home_slider_content_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="home_slider_content">
+										<div class="home_title"><h2>Let's get vaccinated</h2></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="background_image" style="background-image:url(https://www.springfieldmontco.org/media/3142/covid-19-vaccine-development-e1599531596297.jpg)"></div>
+					<div class="home_slider_content_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="home_slider_content">
+										<div class="home_title"><h2>Let's get vaccinated</h2></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Search -->
+
+        <div class="form-group">
+            <label for="pin"></label>
+            <input type="number" maxlength="6" class="form-control" id="pin" placeholder="Enter pin" name="pin">
+            </label>
+        </div>
+
+        <button id="searchbtn" class="btn btn-default" style="border-radius: 20px; background-color: rgb(0, 76, 139); color: floralwhite; font-weight: 600;" >Search</button>
+
+        <button id="searchbtn1" class="btn btn-default" style="border-radius: 20px; background-color: rgb(0, 76, 139); color: floralwhite; font-weight: 600;" >Show All</button>
+
+        <table class="table" id="session">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Pin code</th>
+                    <th>Date</th>
+                    <th>18+</th>
+                    <th>45+</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{% static 'images/footer_1.jpg' %}" data-speed="0.8" ></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+				</div>
+			</div>
+		</div>
+		<div class="col text-center"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+			<a class="credit" href="accounts/site">Site Credits &nbsp;|</a> <a class="form1" href="accounts/feedback">&nbsp;Website Feedback Form</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </div>
+	</footer>
+</div>
+
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'styles/bootstrap4/popper.js' %}"></script>
+<script src="{% static 'styles/bootstrap4/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
+<script src="{% static 'plugins/Isotope/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'plugins/scrollTo/jquery.scrollTo.min.js' %}"></script>
+<script src="{% static 'plugins/easing/easing.js' %}"></script>
+<script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+    <script>
+        var date = new Date();
+        var today = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
+        $("#searchbtn").click(function () {
+            var pin = $('#pin').val();
+            if (pin == '' || pin == undefined) {
+                alert('please enter pin code');
+                return;
+            }
+            $.get("https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByPin?pincode=" + pin +
+                "&date=" + today,
+                function (data, status) {
+                    if (status) {
+                        var sessions = data.sessions ? data.sessions : [];
+                        if (sessions) {
+                            for (var i = 0; i <= sessions.length; i++) {
+                                var classname = "info";
+                                if (i % 2 == 0) {
+                                    classname = "success"
+                                }
+                                $('#session tbody').append("<tr class=" + classname + "><td>" + sessions[i]
+                                    .name + "</td><td>" + sessions[i].pincode + "</td><td>" + sessions[i].date + "</td><td>" + sessions[i].available_capacity + "</td><td>" +
+                                    sessions[i].available_capacity_dose1 + "</td></tr>")
+                            }
+                        }
+                    } else {
+                        alert('error');
+                    }
+
+                });
+        });
+
+        $("#searchbtn1").click(function () {
+           // var district_id = [725,710,711,712,714,715,];
+
+			for(var j=710;j<738;j++){
+				$.get("https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=" +
+                j + "&date=" + today,
+                function (data, status) {
+                    if (status) {
+                        var sessions = data.sessions ? data.sessions : [];
+                        if (sessions) {
+                            for (var i = 0; i <= sessions.length; i++) {
+                                var classname = "info";
+                                if (i % 2 == 0) {
+                                    classname = "success"
+                                }
+
+                                $('#session tbody').append("<tr class=" + classname + "><td>" + sessions[i]
+                                    .name + "</td><td>" + sessions[i].pincode + "</td><td>" + sessions[i].date + "</td><td>" + sessions[i].available_capacity + "</td><td>" +
+                                    sessions[i].available_capacity_dose1 + "</td></tr>")
+                            }
+                        }
+                    } else {
+                        alert('error');
+                    }
+                });
+			}
+			});
+			$("#searchbtn1").click(function () {
+            var district_id = "783";
+				$.get("https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=" +
+                j + "&date=" + today,
+                function (data, status) {
+                    if (status) {
+                        var sessions = data.sessions ? data.sessions : [];
+                        if (sessions) {
+                            for (var i = 0; i <= sessions.length; i++) {
+                                var classname = "info";
+                                if (i % 2 == 0) {
+                                    classname = "success"
+                                }
+
+                                $('#session tbody').append("<tr class=" + classname + "><td>" + sessions[i]
+                                    .name + "</td><td>" + sessions[i].pincode + "</td><td>" + sessions[i].date + "</td><td>" + sessions[i].available_capacity + "</td><td>" +
+                                    sessions[i].available_capacity_dose1 + "</td></tr>")
+                            }
+                        }
+                    } else {
+                        alert('error');
+                    }
+                });
+			});
+
+    </script>
+</body>
+</html>

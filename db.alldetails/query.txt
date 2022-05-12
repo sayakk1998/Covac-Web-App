@@ -1,0 +1,5 @@
+
+
+
+
+select a.id,s.id,a.first_name,a.last_name,s.email,s.number,s.vaccinecenter,s.pin,s.idnumber,s.appointment,s.dose,s.date,s.time from public.auth_user as a inner join public.slotbook_slot as s on a.id = s.id

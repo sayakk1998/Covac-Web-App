@@ -1,0 +1,194 @@
+ body {
+    background-image: url('https://www.health.qld.gov.au/__data/assets/image/0031/1026499/vaccine-ingredients-hand-500x279.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 5;
+    margin: 0;
+    font: 600 16px/18px 'Open Sans', sans-serif;
+}
+
+.card0 {
+    box-shadow: 0px 4px 15px 0px #053352;
+    border-radius: 0px;
+    padding: 0px 0px 10px 10px;
+    margin-right: 900px;
+    padding-bottom: 10%;
+}
+
+.card2 {
+    margin: 50px 10px;
+    padding: 0px;
+}
+
+
+.border-line {
+    border-right: 1px solid #EEEEEE;
+}
+
+.text-sm {
+    font-size: 15px !important;
+    color: rgb(110, 110, 110);
+
+}
+.text-sm:hover{
+    color: #fff;
+}
+
+::placeholder {
+    color: #616161;
+    opacity: 0.7;
+    font-weight: 300;
+}
+
+:-ms-input-placeholder {
+    color: #7a7a7a;
+    font-weight: 300;
+}
+
+::-ms-input-placeholder {
+    color: #666565;
+    font-weight: 300
+}
+
+input,
+textarea {
+    padding: 10px 10px 10px 20px;
+    border: 1px solid rgb(145, 145, 145);
+    border-radius: 25px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #5c646d;
+    font-size: 14px;
+    letter-spacing: 1px;
+    opacity: 0.3;
+}
+
+input:focus,
+textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #313236;
+    outline-width: 0;
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0;
+}
+
+a {
+    color: rgb(21, 81, 83);
+    cursor: pointer;
+}
+a:hover{
+    color: rgb(10, 4, 24);
+}
+
+.btn-blue {
+    background-color: #055063;
+    width: 150px;
+    color: #fff;
+    border-radius: 20px;
+    opacity: 0.9;
+    height: 35px;
+}
+
+.btn-blue:hover {
+    background-color: rgb(76, 89, 97);
+    cursor: pointer;
+}
+
+.bg-blue {
+    color: #fff;
+    background-color: #292a3b;
+}
+footer {
+    display: block;
+    padding: 0px;
+    text-align: left;
+    color: white;
+    font-size: 15px;
+    padding-bottom: 0px;
+
+  }
+  .copyright{
+    display: block;
+    padding: 3px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+  .credit{
+    display: block;
+    padding: 3px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+  .credit:hover{
+      color: #fff;
+  }
+  .feedback{
+    display: block;
+    padding: 3px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+  .feedback:hover{
+    color: #fff;
+}
+.logo
+    {
+    color: var(--color-txt);
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    padding-bottom: 40px;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.logo i {
+    color: rgb(6, 60, 95);
+}
+.tab {
+    text-transform: uppercase
+}
+
+.tab {
+    font-size: 20px;
+    margin-right: 10px;
+    padding-bottom: 0px;
+    padding-top: 3%;
+    margin: 0 15px 10px 0;
+    display: inline-block;
+    border-bottom: 4px solid transparent;
+    color: #02344b;
+
+}
+.tab:hover{
+    color: rgb(110, 110, 110);
+}
+@media screen and (max-width: 991px) {
+
+    .border-line {
+        border-right: none
+    }
+
+    .card2 {
+        border-top: 1px solid #0f454e !important;
+        margin: 10px 25px
+    }
+}
